@@ -1,6 +1,7 @@
 package com.kvieta.nh.gt5;
 
 import com.kvieta.nh.common.material.MaterialUtil;
+import com.kvieta.nh.gt5.recipe.PipeRecipe;
 import com.kvieta.nh.kvietaNH;
 import com.kvieta.nh.util.enums.kvietaMachineID;
 
@@ -13,7 +14,7 @@ public class MachineLoader {
     }
 
     public static void registerRecipes() {
-
+        PipeRecipe.registerPipeRecipes();
     }
 
     public static void registry() {

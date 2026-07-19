@@ -13,9 +13,17 @@ public class MaterialUtil {
         boolean aIsRestrictive, int aTickTime) {
         registerItemPipe(ID, material.getBridgeMaterial(), aInvSlotCount, aStepSize, aIsRestrictive, aTickTime, true);
     }
+
     public static void registerItemPipe(int ID, Werkstoff material, int aInvSlotCount, int aStepSize,
         boolean aIsRestrictive, int aTickTime, boolean generateTinyAndSmall) {
-        registerItemPipe(ID, material.getBridgeMaterial(), aInvSlotCount, aStepSize, aIsRestrictive, aTickTime, generateTinyAndSmall);
+        registerItemPipe(
+            ID,
+            material.getBridgeMaterial(),
+            aInvSlotCount,
+            aStepSize,
+            aIsRestrictive,
+            aTickTime,
+            generateTinyAndSmall);
     }
 
     public static void registerItemPipe(int ID, Materials material, int aInvSlotCount, int aStepSize,
@@ -28,11 +36,11 @@ public class MaterialUtil {
         String unName = material.mName;
         if (generateTinyAndSmall) {
             GTOreDictUnificator.registerOre(
-                OrePrefixes.pipeTiny.get(material), new MTEItemPipe(
+                OrePrefixes.pipeTiny.get(material),
+                new MTEItemPipe(
                     ID,
                     "GT_Pipe_" + unName + "_Tiny",
-                    GTLanguageManager.i18nPlaceholder
-                        ? "gt.oreprefix.tiny_material_item_pipe"
+                    GTLanguageManager.i18nPlaceholder ? "gt.oreprefix.tiny_material_item_pipe"
                         : "Tiny " + material.mDefaultLocalName + " Item Pipe",
                     0.25F,
                     material,
@@ -41,11 +49,11 @@ public class MaterialUtil {
                     aIsRestrictive,
                     aTickTime).getStackForm(1L));
             GTOreDictUnificator.registerOre(
-                OrePrefixes.pipeSmall.get(material), new MTEItemPipe(
+                OrePrefixes.pipeSmall.get(material),
+                new MTEItemPipe(
                     ID + 1,
                     "GT_Pipe_" + unName + "_Small",
-                    GTLanguageManager.i18nPlaceholder
-                        ? "gt.oreprefix.small_material_item_pipe"
+                    GTLanguageManager.i18nPlaceholder ? "gt.oreprefix.small_material_item_pipe"
                         : "Small " + material.mDefaultLocalName + " Item Pipe",
                     0.375F,
                     material,
