@@ -1,5 +1,6 @@
 package com.kvieta.nh;
 
+import static com.kvieta.nh.tcon.Casting.registerTinkerIngotCasting;
 import static com.kvieta.nh.util.dev.DumpMTE.dumpMTEs;
 
 import com.gtnewhorizon.gtnhlib.config.ConfigurationManager;
@@ -28,12 +29,14 @@ public class CommonProxy {
     // postInit "Handle interaction with other mods, complete your setup based on this." (Remove if not needed)
     public void postInit(FMLPostInitializationEvent event) {
         MachineLoader.registry();
+
     }
 
     public void loadComplete(FMLLoadCompleteEvent event) {
         if (ModConfig.debug.dumpMTEs) {
             dumpMTEs();
         }
+        registerTinkerIngotCasting();
     }
 
     // register server commands in this event handler (Remove if not needed)
