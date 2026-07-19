@@ -13,4 +13,6 @@ repositories {
             artifact()
         }
     }
+    maven { url = 'https://jitpack.io' }
 }
+
