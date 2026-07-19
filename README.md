@@ -1,9 +1,9 @@
 # kvieta NH
 
-[![](https://jitpack.io/v/GTNewHorizons/ExampleMod1.7.10.svg)](https://jitpack.io/#GTNewHorizons/ExampleMod1.7.10)
-[![](https://github.com/GTNewHorizons/ExampleMod1.7.10/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/GTNewHorizons/ExampleMod1.7.10/actions/workflows/build-and-test.yml)
+[![](https://jitpack.io/v/lubinacourec/kvietaNH.svg)](https://jitpack.io/#lubinacourec/kvietaNH)
+[![](https://github.com/lubinacourec/kvietaNH/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/lubinacourec/kvietaNH/actions/workflows/build-and-test.yml)
 
 Tweaks/compat for GTNH.
 
 ### Features:
-- nothing
+- brick item pipe
