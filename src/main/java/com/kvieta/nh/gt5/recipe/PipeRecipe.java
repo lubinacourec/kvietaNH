@@ -25,9 +25,10 @@ public class PipeRecipe {
             if (clayPipe != null && brickPipe != null) {
                 GameRegistry.addSmelting(clayPipe, brickPipe, 0.0F);
                 if (ModCheck.ThinkTech) {
-                    clayPipe.stackSize = 64;
-                    brickPipe.stackSize = 64;
-                    ThinkTechCompat.registerKilnRecipe(clayPipe, brickPipe, 60 * 20);
+                    ThinkTechCompat.registerKilnRecipe(
+                        GTOreDictUnificator.get(prefix, Materials.Clay, 64),
+                        GTOreDictUnificator.get(prefix, Materials.Brick, 64),
+                        60 * 20);
                 }
                 // TODO: add brick pipe recycling recipes to macerator - generated recycling recipes give twice as much
                 // dust as they should
