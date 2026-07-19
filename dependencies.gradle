@@ -40,4 +40,5 @@ dependencies {
     compileOnly("TGregworks:TGregworks:1.7.10-GTNH-1.0.33:deobf") { transitive = false }
     compileOnly(files("libs/thinktech-0.2.2-dev.jar"))
     implementation("com.github.GTNewHorizons:Et-Futurum-Requiem:2.6.49-GTNH:dev")
+    compileOnly('com.github.GTNewHorizons:Random-Things:2.7.8:dev')
 }

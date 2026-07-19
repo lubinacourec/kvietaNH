@@ -6,10 +6,10 @@ import com.kvieta.nh.common.ModCheck;
 import com.kvieta.nh.compat.ThinkTechCompat;
 
 import cpw.mods.fml.common.registry.GameRegistry;
+import ganymedes01.etfuturum.recipes.BlastFurnaceRecipes;
 import gregtech.api.enums.Materials;
 import gregtech.api.enums.OrePrefixes;
 import gregtech.api.util.GTOreDictUnificator;
-import ganymedes01.etfuturum.recipes.BlastFurnaceRecipes;
 
 public class PipeRecipe {
 
@@ -25,7 +25,8 @@ public class PipeRecipe {
 
             if (clayPipe != null && brickPipe != null) {
                 GameRegistry.addSmelting(clayPipe, brickPipe, 0.0F);
-                BlastFurnaceRecipes.smelting().addRecipe(clayPipe, brickPipe, 0.0F);
+                BlastFurnaceRecipes.smelting()
+                    .addRecipe(clayPipe, brickPipe, 0.0F);
                 if (ModCheck.ThinkTech) {
                     ThinkTechCompat.registerKilnRecipe(
                         GTOreDictUnificator.get(prefix, Materials.Clay, 64),
