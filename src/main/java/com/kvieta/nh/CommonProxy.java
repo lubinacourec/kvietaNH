@@ -29,7 +29,6 @@ public class CommonProxy {
     // postInit "Handle interaction with other mods, complete your setup based on this." (Remove if not needed)
     public void postInit(FMLPostInitializationEvent event) {
         MachineLoader.registry();
-
     }
 
     public void loadComplete(FMLLoadCompleteEvent event) {

@@ -14,8 +14,7 @@ import tconstruct.smeltery.TinkerSmeltery;
 public class Casting {
 
     public static void registerTinkerIngotCasting() {
-        // addCastingGreg(Materials.Cobalt);
-        // addCastingTiC(FluidRegistry.getFluid("cobalt.molten"), Materials.Cobalt);
+        // cobalt casting not required
         // addCastingGreg(Materials.Ardite);
         addCastingTiC(FluidRegistry.getFluid("ardite.molten"), Materials.Ardite);
         // addCastingGreg(Materials.Manyullyn);

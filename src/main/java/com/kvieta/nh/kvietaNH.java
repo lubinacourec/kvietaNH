@@ -11,7 +11,7 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.event.FMLServerStartingEvent;
 
-@Mod(modid = kvietaNH.MODID, version = Tags.VERSION, name = "MyMod", acceptedMinecraftVersions = "[1.7.10]")
+@Mod(modid = kvietaNH.MODID, version = Tags.VERSION, name = "kvietaNH", acceptedMinecraftVersions = "[1.7.10]")
 public class kvietaNH {
 
     public static final String MODID = "kvietanh";

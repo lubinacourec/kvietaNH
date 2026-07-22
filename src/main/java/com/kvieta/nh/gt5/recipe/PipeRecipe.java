@@ -14,6 +14,7 @@ import gregtech.api.util.GTOreDictUnificator;
 public class PipeRecipe {
 
     private static void registerBrickPipeSmelting() {
+        // Tiny and small brick pipes not generated in MaterialUtil
         OrePrefixes[] pipeSizes = {
             // OrePrefixes.pipeTiny,
             // OrePrefixes.pipeSmall,
